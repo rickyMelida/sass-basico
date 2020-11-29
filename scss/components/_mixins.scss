@@ -1,0 +1,22 @@
+//Trozo de codigo que podemos reutilizar
+
+@mixin button($color) {
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1em;
+    background-color: $color;
+
+    //Tambien podemos incluir hover
+    //El ampersan es repetir el selector padre
+    &:hover {
+        background: green;
+    }
+    
+    @media screen and (min-width: 640px){
+        background-color: yellow;
+    }
+}
+
+button {
+    @include button(red);
+}

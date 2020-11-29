@@ -1,0 +1,22 @@
+$bp : (
+    m: 640px,
+    l: 1250px
+);
+
+@for $i from 1 through 20 {
+    //interpolamos la variable i con .cols
+    .cols-#{$i * 5} {
+        width: $i * 5%;
+    }
+
+}
+
+//map-get() es para obtner el valor de un mapa
+@media screen and (min-width: map-get($bp, m)){
+    @for $i from 1 through 20 {
+        .cols-m-#{$i * 5} {
+            width: $i * 5%;
+    
+        }
+    }
+}

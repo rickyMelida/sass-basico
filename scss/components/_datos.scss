@@ -1,0 +1,22 @@
+$number: 1;
+$number2: 10px;
+$number3: 20s;
+$string: 'Ricardo';
+$string2: none;
+$color: red;
+$color2: hsl(200, 100, 50);
+$color3: #aaff99;
+$list: 1px solid red;
+$list2: primary, secondary, tertiary;
+$boolean: true;
+//Los mapas son como objetos de JS, tienen clave y valor
+$map: (
+    primary: red,
+    secondary: green,
+    tertiary: blue
+);
+
+body {
+    // Esto es como un console.log($number);
+    @debug type-of($color) ;
+}

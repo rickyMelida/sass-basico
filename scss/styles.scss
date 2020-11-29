@@ -1,0 +1,9 @@
+@import "./components/datos";
+@import "./components/nesting";
+@import "./components/mixins";
+@import "./components/ciclos";
+
+body {
+    color: red;
+    padding: 10px;
+}
